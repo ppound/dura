@@ -1,0 +1,382 @@
+/* $Id: corporate.css,v 0.1 2010/11/22 02:16:49 krisbulman Exp $ */
+
+
+body,
+caption,
+th,
+td,
+input,
+textarea,
+select,
+option,
+legend,
+fieldset {
+  /* The following font family declarations are based on the Microsoft core web
+   * fonts which are common fonts available on most computer systems. The DejaVu
+   * fonts are commonly available on Linux systems where the MS fonts are less
+   * common. Tahoma and Helvetica are also widely available.
+   *
+   * A user's web browser will look at the comma-separated list and will
+   * attempt to use each font in turn until it finds one that is available
+   * on the user's computer. The final "generic" font (sans-serif or serif)
+   * hints at what type of font to use if the web browser doesn't find any
+   * of the fonts in the list.
+
+  font-family: "Times New Roman", Times, Georgia, "DejaVu Serif", serif;
+  font-family: Times, "Times New Roman", Georgia, "DejaVu Serif", serif;
+  font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+
+  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  font-family: Tahoma, Verdana, "DejaVu Sans", sans-serif;
+  font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+
+  font-family: "Courier New", "DejaVu Sans Mono", monospace;
+
+   */
+
+  font-family:"Lucida Grande",Verdana,"Bitstream Vera Sans",Arial,sans-serif !important;
+
+}
+
+#skip-link,
+#page {
+  /*
+   * To use a 12px font size on the page, delete the 14px declarations.
+   * to use a 14px font size on the page, delete the 12px declarations.
+   */
+
+  /* Use a 12px base font size with a 16px line height */
+  font-size: 0.75em; /* 16px x .75 = 12px */
+  line-height: 1.5em; /* 12px x 1.5 = 18px */
+}
+
+
+#logo /* Wrapping link for logo */ {
+}
+
+#logo img {
+}
+
+/**
+ * @file
+ * Page Background Styling
+ */
+
+body.front, body.not-front {
+}
+
+#page-wrapper {
+}
+
+#page {
+}
+
+#headercontent-wrapper {
+}
+
+#header .section .HeaderRight .block{
+}
+
+#topbar-wrapper {
+}
+
+#topbar .block {
+}
+
+#topbar ul {
+}
+
+#topbar-wrapper ul.menu li {
+}
+
+#header .tb1, #header .tb2 {
+}
+
+#topbar-wrapper {
+}
+
+#navigation {
+}
+
+#navigation .section {
+}
+
+#sitecontent-wrapper {
+}
+
+#mainbottom-wrapper {
+}
+
+#bottom-wrapper {
+}
+
+#closure-wrapper {
+}
+
+#feature {
+}
+
+#feature .section {
+}
+
+#preface-wrapper {
+}
+
+#main-wrapper {
+}
+
+#main {
+}
+
+#header {
+}
+
+#headercontent-wrapper-bg {
+}
+
+#headercontent-wrapper {
+}
+
+h1#site-name, div#site-name {
+}
+
+#name-and-slogan {
+}
+
+#topbar-wrapper {
+}
+
+#header .section {
+}
+
+#floater {
+}
+
+#logo {
+}
+
+#name-and-slogan {
+}
+
+#sitelogo {
+}
+
+
+#sitecontent{
+}
+
+#footer {
+}
+
+#footer .section {
+}
+
+.with-sidebar-footer #footer-preface-wrapper {
+}
+
+#footer-preface-wrapper {
+}
+
+#footer-content-bottom-wrapper {
+}
+
+#header {
+}
+
+#headercontent-inner {
+}
+
+
+#headercontent-wrapper .column.HeaderRight .block .content {
+}
+
+#headercontent-wrapper .column.HeaderRight .block-menu {
+}
+
+#search {
+}
+
+#topbar .block {
+}
+
+#topbar ul {
+}
+
+#topbar #search-box {
+}
+
+/* block bgs */
+
+.region-sidebar-first .block h2.title, .region-sidebar-second .block h2.title, div.admin-panel h3 {
+}
+
+.region-sidebar-first .block div.content, .region-sidebar-second .block div.content, div.admin-panel .body, .comment  {
+}
+
+.region-sidebar-first .block .content, .region-sidebar-second .block .content {
+}
+
+
+/* site padding */
+
+#feature .block {
+}
+
+#preface-wrapper .block {
+}
+
+#mainbottom-wrapper .block {
+}
+
+#bottomcontent-wrapper .block {
+}
+
+/* text colors */
+
+#body {
+color: #666;
+}
+
+#feature {
+}
+
+#topbar-wrapper {
+}
+
+#topbar {
+}
+
+header {
+}
+
+#navigation{
+}
+
+#preface-wrapper{
+}
+
+#bottom {
+color:#FFFFFF;
+}
+
+
+
+/* Link Colors */
+a:link {
+color: #999;
+}
+
+a:visited {
+color: #999;
+}
+
+a:hover,
+a:focus {
+text-decoration: underline;
+}
+
+a:active {
+color: #666;
+}
+
+li a.active {
+color:#666;
+}
+
+#nav .menu a:link {
+color: #666;
+}
+
+#nav .menu a:visited {
+color: #666;
+}
+
+#nav .menu a:hover,
+#nav .menu a:focus {
+color: #cc9966;
+}
+
+#nav .menu a:active {
+color: #cc9966;
+}
+
+#nav .menu  a.active  {
+color: #cc9966;
+}
+
+#header .menu a:link {
+color: #6699cc
+}
+
+#header a:visited {
+color: #6699cc
+}
+
+#header a:hover,
+#header a:focus {
+color: #6699cc
+}
+
+#header a:active {
+color: #6699cc
+}
+
+#header li  a.active,  {
+color: #6699cc
+}
+
+
+#content-area a {
+text-decoration: underline;
+color: #6699cc;
+font-weight: bold;
+}
+
+.sidebar a {
+text-transform:uppercase;
+}
+
+
+
+#bottom a:link {
+color: #fff
+}
+
+#bottom a:visited {
+color: #fff
+}
+
+#bottom a:hover,
+#bottom a:focus {
+color: #fff
+}
+
+#bottom a:active {
+color: #fff
+}
+
+#bottom li  a.active,  {
+color: #fff
+}
+
+
+/* block bgs */
+
+.region-sidebar-first .block h2.title, .region-sidebar-second .block h2.title, div.admin-panel h3 {
+background: transparent none repeat scroll 0 0;
+border: 0;
+}
+
+.region-sidebar-first .block div.content, .region-sidebar-second .block div.content, div.admin-panel .body, .comment  {
+background-color:#F4F4F4;
+border-color:#efefef #E8E8E9 #E8E8E9 #efefef;
+border-style:solid;
+border-width:1px;
+}
+
+.region-sidebar-first .block .content, .region-sidebar-second .block .content {
+margin:0;
+padding:2px 15px;
+}
+
