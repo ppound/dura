@@ -181,3 +181,13 @@ function phptemplate_file($element){
   $element['#size'] = 40;
   return theme_file($element);
 }
+
+function dura_preprocess_page(&$vars) {
+
+  // Titles are ignored by content type when they are not desired in the design.
+  $vars['original_title'] = $vars['title'];
+  if (!empty($vars['node']) && in_array($vars['node']->type, array('page', 'slideshow'))) {
+    $vars['title'] = '';
+  }
+
+}

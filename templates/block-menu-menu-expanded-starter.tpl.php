@@ -53,18 +53,14 @@
  * @see zen_process()
  */
 ?>
-	<div id="superfish">
-
 <div id="<?php print $block_html_id; ?>" class="<?php print $classes; ?>">
-
   <?php if ($title): ?>
     <h2 class="title"><?php print $title; ?></h2>
   <?php endif; ?>
-
+<div class="smalliconmenu futura">
   <div class="content">
     <?php print $content; ?>
   </div>
-
+</div>
   <?php print $edit_links; ?>
 </div> <!-- /.block -->
-	</div> <!-- /#superfish -->

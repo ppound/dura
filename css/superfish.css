@@ -71,6 +71,7 @@ border-right:  0px solid #ccc;
 
 #navigation #nav, #navigation #superfish { 
 border-left: 0px solid #ccc;
+height: 20px;
 }
 
 #superfish .menu li li {

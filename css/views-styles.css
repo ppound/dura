@@ -5,4 +5,7 @@
  * Views Styling
  */
 
+#views-ajax-pad .form-item {
+width: 330px;
+}
 

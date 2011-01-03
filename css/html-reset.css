@@ -76,17 +76,21 @@ fieldset {
    */
 
   /* Use a 12px base font size with a 16px line height */
-  font-size: 0.75em; /* 16px x .75 = 12px */
+  font-size: 0.7em; /* 16px x .75 = 12px */
   line-height: 1.5em; /* 12px x 1.5 = 18px */
 }
 
 
 pre,
 code {
-  font-size: 1.1em; /* Monospace fonts can be hard to read */
+  font-size: 0.75em; /* Monospace fonts can be hard to read */
   font-family: "Courier New", "DejaVu Sans Mono", monospace;
 }
 
+textarea {
+font-size: 100%;
+
+}
 
 html.js fieldset.collapsible .fieldset-wrapper {
 overflow:visible;
@@ -287,10 +291,24 @@ font-size: 115%;
 font-size: 90%;
 }
 
+#footer .block{
+padding: 1em 10px 0 10px;
+}
+
 #closure {
-font-size: 70%;
+font-size: 90%;
 text-align: center;
 }
+
+#closure .block{
+margin-bottom: 0;
+padding-top: 1em;
+}
+
+#footer-message {
+font-size: 60%;
+}
+
 
 /*4
  * Block-level elements
@@ -388,12 +406,6 @@ dd {
   padding: 0;
 }
 
-#headercontent-wrapper .block-menu  {
-float: right;
-margin: 0;
-text-transform:uppercase;
-vertical-align: bottom;
-}
 
 #headercontent-wrapper ul {
     margin: 0;
@@ -407,15 +419,12 @@ vertical-align: bottom;
     margin: 0;
     padding: 0;
 }
-    
-#headercontent-wrapper ul {
-    padding: 0 0.4em;
-}  
 
 #headercontent-wrapper ul.menu li {
     padding: 0 0.6em 0 0.2em;
-    border-right: 1px solid #000;
+    border-right: 1px solid #6699CC;
     margin: 0;
+
 }
 
 #headercontent-wrapper ul.menu li.last {
@@ -459,12 +468,16 @@ padding-left: 0;
 }
 
 
-#bottom ul.menu, .secondarylinks ul.links, .secondarymenu ul.links {
+.secondarylinks ul.links, .secondarymenu ul.links {
 text-transform:uppercase;
 }
 
-.secondarylinks ul.links li {
+.secondarylinks .menu {
 float: right;
+}
+
+.secondarylinks {
+padding: 0 5px 0 5px;
 }
 
 .block-menu h2.title {

@@ -71,6 +71,10 @@ padding-bottom:1em;
 
 .node .submitted /* The "posted by" information */ {
 color:#999999;
+font-size: 90%;
+clear: both;
+display: block;
+margin-bottom: 1em;
 }
 
 .node .terms /* Node terms (taxonomy) */ {

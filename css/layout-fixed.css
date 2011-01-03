@@ -44,19 +44,19 @@ body {
 #featured div.section, #messages, #main, #mainbottom-wrapper div.section,  #footer-wrapper,  #closure {
 margin-left:auto;
 margin-right:auto;
-width:730px;
+width:770px;
 }
 
 #page {
 margin-left:auto;
 margin-right:auto;
-width:774px;
+width:804px;
 }
 
 #bottom, #bottomcontent-wrapper  {
 margin-left:auto;
 margin-right:auto;
-width:771px;
+width:800px;
 }
 
 
@@ -86,10 +86,10 @@ width:771px;
   position: relative;
 }
 
-#sitecontent {
-  min-height:500px;
+#main {
+  min-height:275px;
   height:auto !important;
-  height:500px;
+  height:275px;
   padding: 0;
 }
 
@@ -99,32 +99,33 @@ width:771px;
 #content,
 .no-sidebars #content {
   float: left; /* LTR */
-  width: 730px;
+  width: 770px;
   margin-left: 0; /* LTR */
-  margin-right: -730px; /* LTR */ /* Negative value of #content's width + left margin. */
+  margin-right: -770px; /* LTR */ /* Negative value of #content's width + left margin. */
   padding: 0; /* DO NOT CHANGE. Add padding or margin to #content .section. */
 }
 
 .sidebar-first #content {
-  width: 530px;
-  margin-left: 200px; /* LTR */ /* The width of .region-sidebar-first. */
-  margin-right: -730px; /* LTR */ /* Negative value of #content's width + left margin. */
+  width: 560px;
+  margin-left: 210px; /* LTR */ /* The width of .region-sidebar-first. */
+  margin-right: -770px; /* LTR */ /* Negative value of #content's width + left margin. */
 }
 
 .sidebar-second #content {
-  width: 530px;
+  width: 560px;
   margin-left: 0; /* LTR */
-  margin-right: -730px; /* LTR */ /* Negative value of #content's width + left margin. */
+  margin-right: -770px; /* LTR */ /* Negative value of #content's width + left margin. */
 }
 
 .two-sidebars #content {
-  width: 330px;
-  margin-left: 200px; /* LTR */ /* The width of .region-sidebar-first */
-  margin-right: -730px; /* LTR */ /* Negative value of #content's width + left margin. */
+  width: 350px;
+  margin-left: 210px; /* LTR */ /* The width of .region-sidebar-first */
+  margin-right: -770px; /* LTR */ /* Negative value of #content's width + left margin. */
 }
 
+
 #content .section {
-margin:15px;
+margin:10px;
 padding:0;
 }
 
@@ -163,7 +164,7 @@ padding:0;
 #navbar-wrapper {
 background-color: transparent;
 display: inline-block;
-width: 98%;
+width: 750px;
 margin-left: 10px;
 margin-right: 10px;
 }
@@ -227,7 +228,7 @@ padding-right:10px;
 }
 
 #navbar-wrapper #nav, 	#navbar-wrapper #search {
-padding-left:0;
+padding-left:1px;
 padding-right:0px;
 }
 
@@ -244,9 +245,9 @@ margin: 0;
  */
 .region-sidebar-first {
   float: left; /* LTR */
-  width: 200px;
+  width: 210px;
   margin-left: 0; /* LTR */
-  margin-right: -200px; /* LTR */ /* Negative value of .region-sidebar-first's width + left margin. */
+  margin-right: -210px; /* LTR */ /* Negative value of .region-sidebar-first's width + left margin. */
   padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-first .section. */
 }
 
@@ -260,9 +261,9 @@ padding:0;
  */
 .region-sidebar-second {
   float: left; /* LTR */
-  width: 200px;
-  margin-left: 530px; /* LTR */ /* Width of content + sidebar-first. */
-  margin-right: -730px; /* LTR */ /* Negative value of .region-sidebar-second's width + left margin. */
+  width: 210px;
+  margin-left: 560px; /* LTR */ /* Width of content + sidebar-first. */
+  margin-right: -770px; /* LTR */ /* Negative value of .region-sidebar-second's width + left margin. */
   padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-second .section. */
 }
 
@@ -419,21 +420,21 @@ float: left;
 
 #headercontent-wrapper .column.HeaderRight {
 text-align: right;
-float: right;
+float: left;
 }
 
 #headercontent-wrapper.hf1 .column.HeaderLeft,
 #headercontent-wrapper.hf2 .column.HeaderLeft,
 #headercontent-wrapper.hf3 .column.HeaderLeft,
 #headercontent-wrapper.hf4 .column.HeaderLeft {
-width: 60%;
+width: 50%;
 }
 
 #headercontent-wrapper.hf1.hs1 .column.HeaderRight,
 #headercontent-wrapper.hf2.hs1 .column.HeaderRight,
 #headercontent-wrapper.hf3.hs1 .column.HeaderRight,
 #headercontent-wrapper.hf4.hs1 .column.HeaderRight {
-width: 40%;
+width: 50%;
 }
 
 #headercontent-wrapper.hf1.hs0 .column,
@@ -450,7 +451,7 @@ padding-right:10px;
 
 #headercontent-inner {
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 /* Feature */
@@ -550,11 +551,11 @@ width: 50%;
 }
 
 #content-top-wrapper.in2 .column.ContentTop2 .block {
-padding-right: 7.5px;
+padding-right: 0px;
 }
 
 #content-top-wrapper.in2 .column.ContentTop1 .block {
-padding-left: 7.5px;
+padding-left: 0px;
 }
 
 /*
@@ -616,7 +617,7 @@ width: 50%;
 -------------------------------------------------------------- */
 
 #mainbottom-wrapper {
-padding-bottom: 15px;
+padding-bottom: 5px;
 }
 
 #mainbottom-wrapper .column {
@@ -642,6 +643,7 @@ width: 25%;
 #mainbottom-wrapper .block {
 padding-left:10px;
 padding-right:10px;
+margin-bottom: 0;
 }
 
 

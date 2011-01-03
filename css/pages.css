@@ -311,8 +311,8 @@ background-color: #666;
 #footer .section {
 }
 
-#footer-message /* Wrapper for the footer message from Drupal's "Site information"
-                   and for any blocks placed in the footer region */ {
+#footer-message /* Wrapper for the footer message from Drupal's "Site information" */ {
+    padding: 0.8em;
 }
 
 .region-footer {

@@ -120,6 +120,10 @@ body.front, body.not-front {
 #feature .section {
 }
 
+.front #feature .content {
+ height: 220px;
+}
+
 #preface-wrapper {
 }
 
@@ -264,24 +268,24 @@ color:#FFFFFF;
 
 /* Link Colors */
 a:link {
-color: #999;
+color: #666;
 }
 
 a:visited {
-color: #999;
+color: #666;
 }
 
 a:hover,
 a:focus {
-text-decoration: underline;
+color: #cc9966;
 }
 
 a:active {
-color: #666;
+color: #cc9966;
 }
 
 li a.active {
-color:#666;
+color:#cc9966;
 }
 
 #nav .menu a:link {
@@ -305,39 +309,66 @@ color: #cc9966;
 color: #cc9966;
 }
 
-#header .menu a:link {
+.HeaderRight .menu a:link {
 color: #6699cc
 }
 
-#header a:visited {
+.HeaderRight a:visited {
 color: #6699cc
 }
 
-#header a:hover,
-#header a:focus {
+.HeaderRight a:hover,
+.HeaderRight a:focus {
+color: #6699cc;
+text-decoration: underline;
+}
+
+.HeaderRight a:active {
 color: #6699cc
 }
 
-#header a:active {
+.HeaderRight li  a.active,  {
 color: #6699cc
 }
 
-#header li  a.active,  {
-color: #6699cc
+#bottom a:hover,
+#bottom a:focus {
+text-decoration: underline;
 }
 
-
-#content-area a {
+#content-area a,
+#content-top-wrapper a,
+#content-bottom-wrapper a {
 text-decoration: underline;
 color: #6699cc;
 font-weight: bold;
 }
 
-.sidebar a {
-text-transform:uppercase;
+#content-area .largeiconmenu a{
+text-decoration: none;
+color: #999;
+font-weight: normal;
 }
 
 
+.sidebar a {
+color: #999;
+}
+
+.sidebar a:hover,
+.sidebar a:focus,
+#content-area .largeiconmenu a:hover,
+#content-area .largeiconmenu a:focus {
+color: #cc9966;
+}
+
+#feature a {
+text-decoration: underline;
+}
+
+.sidebar a {
+text-transform:uppercase;
+}
 
 #bottom a:link {
 color: #fff
@@ -368,15 +399,178 @@ background: transparent none repeat scroll 0 0;
 border: 0;
 }
 
-.region-sidebar-first .block div.content, .region-sidebar-second .block div.content, div.admin-panel .body, .comment  {
-background-color:#F4F4F4;
+.region-sidebar-first .block div.content, .region-sidebar-second .block div.content {
+background-color:transparent;
+border-color:#efefef #E8E8E9 #E8E8E9 #efefef;
+border-style:solid;
+border-width:0px;
+}
+
+div.admin-panel .body, .comment  {
+background-color:#f4f4f4;
 border-color:#efefef #E8E8E9 #E8E8E9 #efefef;
 border-style:solid;
 border-width:1px;
 }
+
 
 .region-sidebar-first .block .content, .region-sidebar-second .block .content {
 margin:0;
 padding:2px 15px;
 }
 
+
+.spotlight {
+background: url(../images/duracloud-spotlight.png) no-repeat top left;
+width: 170px;
+height: 25px;
+border-bottom: 1px solid #000;
+margin-bottom: 0.5em;
+}
+
+.view-Spotlight p{
+margin: 0;
+}
+
+.view-Spotlight .views-field-title, 
+.view-Spotlight .views-field-view-node a {
+font-weight: bold;
+color: #666;
+}
+
+.view-Spotlight .views-field-view-node {
+text-align: right;
+padding-right: 12px;
+background: url(../images/bullet-expand.png) no-repeat right center;
+}
+
+#block-views-Spotlight-block_1 {
+background: url("../images/spotlight-bg.png") no-repeat scroll right top transparent;
+padding-top: 21px;
+height: 222px;
+font-size: 90%;
+line-height: 1.416em; 
+}
+
+.node {
+border: 0px;
+}
+
+/*
+ * Front Content & Right Sidebar
+ */
+.front.sidebar-second #content {
+  width: 490px;
+  margin-left: 0; /* LTR */
+  margin-right: -770px; /* LTR */ /* Negative value of #content's width + left margin. */
+}
+
+.front .region-sidebar-second {
+  float: left; /* LTR */
+  width: 280px;
+  margin-left: 490px; /* LTR */ /* Width of content + sidebar-first. */
+  margin-right: -770px; /* LTR */ /* Negative value of .region-sidebar-second's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-second .section. */
+}
+
+.front .region-sidebar-second .block {
+  padding: 0 16px 0 40px;
+}
+
+#content-area .largeiconmenu a {
+font-weight: normal;
+}
+
+/* Large Icon Menu */
+
+.largeiconmenu a {
+font-size: 200%;
+line-height: 2.2em;
+text-transform:uppercase;
+}
+
+.largeiconmenu a {
+padding-left: 55px;
+}
+
+.largeiconmenu ul {
+padding: 0;
+}
+
+.largeiconmenu ul li {
+list-style: none outside none;
+background: url(../images/largemenuicon.png) no-repeat top left;
+}
+
+.largeiconmenu ul li {
+margin-left: 4em;
+margin-top: 0.4em;
+margin-bottom: 0.4em;
+}
+
+.largeiconmenu ul li.first,
+.largeiconmenu ul li.last {
+margin-left: 0px;
+}
+
+/* Small Icon Menu */
+
+.smalliconmenu a {
+font-size: 115%;
+line-height: 1.9em;
+}
+
+.smalliconmenu a {
+padding-left: 0px;
+}
+
+.smalliconmenu ul {
+padding: 0px;
+}
+
+.smalliconmenu ul li {
+list-style: none;
+background: url(../images/smallmenuicon.png) no-repeat 0 0;
+padding: 0 0 0px 30px;
+margin: 2em 0;
+}
+
+/* thumbnails */
+
+.thumbwithcaption {
+margin:0px auto;
+width:240px;
+text-align:left;
+border:0px solid #000;
+padding:1px;
+color: #ccc;
+}
+
+.thumbwithcaption img {
+float:left;
+margin: 5px 5px 5px 0;
+display:inline;
+border:1px solid #999;
+}
+
+.thumbwithcaption ul{
+font-size:75%;
+font-style:italic;
+margin:0;
+padding:0;
+list-style:none;
+}
+
+.thumbwithcaption ul li{
+margin:1em 0
+}
+
+.thumbwithcaption ul{
+overflow:auto;/* this is the key for good browsers*/
+}
+
+/* mac hide - this is for ie6 and less \*/
+* html .thumbwithcaption ul {
+height:1%
+}
+/* end hide*/

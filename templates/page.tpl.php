@@ -187,10 +187,10 @@
 
 <div class="section clearfix">
 
- <?php if($logo || $site_name || $site_slogan || $header_first || $header_second): ?>
+ <?php if($logo || $site_name || $site_slogan || $header_first || $header_second || $secondary_links): ?>
     <div style="clear:both"></div>
 	<div id="headercontent-wrapper-bg">
-    <div id="headercontent-wrapper" class="hf<?php print (int)(bool) $header_first + (int)(bool) $logo + (int)(bool) $site_name + (int)(bool) $site_slogan;?> hs<?php print (int)(bool) $header_second;?>"><div class="section">
+    <div id="headercontent-wrapper" class="hf<?php print (int)(bool) $header_first + (int)(bool) $logo + (int)(bool) $site_name + (int)(bool) $site_slogan;?> hs<?php print (int)(bool) $header_second  + (int)(bool) $secondary_links;?>"><div class="section">
           <?php if($header_first || $logo || $site_name || $site_slogan): ?>
 
 <div id="headercontent-inner" class="clearfix tbl<?php print (bool) $topbar_left; ?>  tbr<?php print (bool) $topbar_right; ?>">
@@ -476,13 +476,10 @@
     <?php endif; ?>
  
   
- <?php if($footer || $footer_message): ?>
+ <?php if($footer): ?>
     <div style="clear:both"></div>
     <div id="footer" class="in<?php print (bool) $footer; ?>"><div class="section">
-          <div class="footer">
-        <?php if ($footer_message): ?>
-          <div id="footer-message"><?php print $footer_message; ?></div>
-        <?php endif; ?>          
+          <div class="footer">          
             <?php print $footer; ?>
           </div>
       <div style="clear:both"></div>
@@ -492,10 +489,13 @@
 </div></div></div><!-- /#bottom, /.section, /#bottom-wrapper  -->
 
   </div></div> <!-- /#page, /#page-wrapper -->
-<?php if($page_closure): ?>
+<?php if($page_closure || $footer_message): ?>
 <div id="closure-wrapper">
  <div id="closure">
   <?php print $page_closure; ?>
+         <?php if ($footer_message): ?>
+          <div id="footer-message"><?php print $footer_message; ?></div>
+        <?php endif; ?> 
  </div>
 </div>
 <?php endif; ?>

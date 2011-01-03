@@ -2,7 +2,7 @@
 
 
   ; The name and description of the theme used on the admin/build/themes page.
-name        = cloud
+name        = Cloud
 description = Read the <a href="http://drupal.org/node/629510">online docs</a> or the included README.txt on how to create a Zen sub-theme.
 
   ; The screenshot used on the admin/build/themes page.
@@ -119,9 +119,9 @@ regions[page_closure]   = Page closure
   ; entry for it below. See the Drupal 6 Theme Guide for more info:
   ; http://drupal.org/node/171205#features
 features[] = logo
-features[] = name
-features[] = slogan
-features[] = mission
+; features[] = name
+; features[] = slogan
+; features[] = mission
 features[] = node_user_picture
 features[] = comment_user_picture
 features[] = search
